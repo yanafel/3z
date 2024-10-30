@@ -1,0 +1,27 @@
+@media (max-width:800px)
+{
+    .header{
+        flex-direction: column-reverse;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .header-text{
+        transform: rotate(0deg);
+    }
+    .header-text div{
+        text-align: center;
+    }
+    .logo{
+        text-align: center;
+    }
+    nav>ul{
+        width:100%;
+    }
+    .content{
+        margin:10px !important;
+    }
+    footer{
+        margin-top:10px;
+    }
+}
