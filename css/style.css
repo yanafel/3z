@@ -1,3 +1,11 @@
+@font-face {
+    font-family: airport;
+    src: url(../font/Airport.ttf);
+}
+@font-face {
+    font-family: any;
+    src: url(../font/OKScU8ig.ttf);
+}
 body{
     margin:0;
     padding:0;
@@ -17,7 +25,10 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem; 
+    font-size: 4rem;
+    transform: rotate(-5deg);
+    text-shadow: 1px 1px 1px #FF00FF, 2px 2px 3px #8A2BE2;
+    font-family: airport; 
 }
 .container{
     flex-grow:1;
@@ -25,13 +36,43 @@ div{
 }
 nav{
     margin:0 30px;
+    position:relative;
+    z-index: 1000;
 }
 nav>ul{
     list-style: none;
     padding:0;
+    width: 200px;
+    margin:0;
 }
 nav>ul li{
     display: block;
+    font-family: any;
+    border:2px solid #8B4513;
+    background: radial-gradient(#F4A460,#D2691E);
+    border-radius:10px;
+    height:50px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 1px;
+}
+nav>ul li div{
+    width:90%;
+    text-align: center;
+}
+nav>ul li div:hover{
+    cursor: pointer;
+    color:#800080;
+}
+.content{
+    box-shadow: 1px 3px 3px black;
+    border:1px solid #8B4513;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding:5px 5px 5px 50px;
 }
 footer{
     height: 40px;
