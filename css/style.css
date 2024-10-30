@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(to right,#FFEFD5,#FFDAB9);
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+div{
+    box-sizing: border-box;
+}
+.header{
+    display:flex;
+}
+.header-text{
+    flex-grow:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem; 
+}
+.container{
+    flex-grow:1;
+    display:flex;
+}
+nav{
+    margin:0 30px;
+}
+nav>ul{
+    list-style: none;
+    padding:0;
+}
+nav>ul li{
+    display: block;
+}
+footer{
+    height: 40px;
+}
